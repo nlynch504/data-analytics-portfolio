@@ -1,0 +1,11 @@
+create table final_merge as
+  select pop.Year, pop.Country, coalesce(area.Region,'other') Region, pop.Population, fertility.Fertility, gdp.GDPpercapita
+    from pop
+          left join area
+              on pop.Country = area.Entity
+          left join fertility
+              on pop.Country = fertility.Country
+              AND pop.Year = fertility.Year
+          left join gdp
+              on  pop.Country = gdp.Country
+              AND pop.Year = gdp.Year;

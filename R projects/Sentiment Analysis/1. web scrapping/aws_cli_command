@@ -1,0 +1,1 @@
+aws emr create-cluster --name "c4_t2_date_3_7_18" --ec2-attributes SubnetId=subnet-85421ae1 --ami-version 3.11.0 --auto-terminate --log-uri s3://3-debug-c4t2/ --use-default-roles --enable-debugging --instance-groups InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large InstanceGroupType=CORE,InstanceCount=3,InstanceType=m4.large --steps file://AWS_websites.json

@@ -1,0 +1,15 @@
+create table final_merge as
+  select pop.Year, pop.Country, area.Region, pop.Population, fertility.Fertility, gdp.GDPpercapita
+    from
+      (select Year, Country, Population from schema.pop)
+          left outer join
+            (select region schema.area)
+              on pop.Country = area.Entity
+          left outer join
+            (select Fertility from schema.fertility)
+              on pop.Country = fertility.Country
+              AND pop.Year = fertility.Year
+          left outer join
+            (select GDPpercapita from schema.gdp)
+              on  pop.Country = gdp.Country
+              AND pop.Year = gdp.Year;

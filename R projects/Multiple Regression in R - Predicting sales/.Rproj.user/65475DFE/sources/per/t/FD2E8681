@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521566813740.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "518261429",
+    "id" : "FD2E8681",
+    "lastKnownWriteTime" : 1523051135,
+    "last_content_update" : 1523051135505,
+    "path" : "~/Data.Analytics.Portfolio/R projects/Multiple Regression in R - Predicting sales/Final week 6 R script.R",
+    "project_path" : "Final week 6 R script.R",
+    "properties" : {
+        "cursorPosition" : "82,66",
+        "scrollLine" : "69",
+        "source_window_id" : ""
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

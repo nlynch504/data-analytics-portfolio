@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1520889337790.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3514843351",
+    "id" : "FA2B640",
+    "lastKnownWriteTime" : 1520889507,
+    "last_content_update" : 1520889507434,
+    "path" : "C:/Users/Nickachu/Data Analytics Portfolio/R projects/Market Basket Rules/NL Final Week 7 script.R",
+    "project_path" : "NL Final Week 7 script.R",
+    "properties" : {
+        "cursorPosition" : "66,0",
+        "scrollLine" : "35"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

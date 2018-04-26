@@ -1,0 +1,66 @@
+library(arules)
+library(arulesViz)
+
+#read transacation data as lists instead of variables ==> use read.Transactions instead of read.csv, removed 2 blank rows prior to upload
+Trans <- read.transactions("ElectronidexTransactions2017.csv", format = "basket", sep = "," , cols = NULL, rm.duplicates = TRUE)
+
+inspect (Trans) # You can view the transactions. Is there a way to see a certain # of transactions? inspect(Trans[1:n])
+length (Trans) # Number of transactions.
+size (Trans) # Number of items per transaction
+LIST(Trans) # Lists the transactions by conversion (LIST must be capitalized)
+itemLabels(Trans) # To see the item labels ==> matched 125 labels discussed 
+
+#item distribution
+itemFrequencyPlot(Trans, topN = 10, type = "absolute", xlab = "Top 10 Products", ylab = "Frequency")
+# type can be absoulte or relative. Relative gives %ages, which Ithink is more helpful
+# lift and support aren't helpful for item distribution, but would be after making association rules 
+
+summary(Trans) # give a numeric output for top items 
+
+#image function - displays binary info of transaction via item number and transaction row 
+  #image(Trans[x:y])
+image(sample(Trans,30)) # plot 30 trans (dataset,number of rows)
+# image does not provide much insight as the items are defined by number and does not show the distribution (itemfreqplot is more helpful)
+
+#various rules
+ap_8 <- apriori(Trans, parameter = list(supp = 0.05, conf = .20, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+ap_13 <- apriori(Trans, parameter = list(supp = 0.045, conf = .20, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+ap_24 <- apriori(Trans, parameter = list(supp = 0.0025, conf = .75, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+ap_28 <-apriori(Trans, parameter = list(supp = 0.002, conf = .80, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+ap_111 <- apriori(Trans, parameter = list(supp = 0.0015, conf = .80, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+
+#remove redundant rules ==> no repeat rules for ap_111
+is.redundant(ap_111)
+
+summary(is.redundant(ap_111)) #counts T/F
+
+#easier way to prune rules
+
+inspect(ap_111[is.redundant(ap_111)]) #view redundant
+inspect(ap_111[!is.redundant(ap_111)]) #view non-redudant
+rules_pruned <- ap_111[!is.redundant(ap_111)] #keep non-red rules
+summary(rules_pruned) #checksum for errors 
+
+#returned 18 rules <== chosen for report
+ap_18 <- apriori(Trans, parameter = list(supp = 0.04, conf = .20, maxtime = 60, minlen = 2, maxlen = 30, target = "rules"))
+
+#sorted rules (sorted by lift, life = importance of a rule )
+s_rules_14 <- inspect(sort(ap_18, by = "lift"))
+
+#graph
+graph <- plot(ap_18, measure=c("support","lift"), shading="confidence")
+
+#interactive graph
+i_graph <- plot(ap_18, measure=c("support","lift"), shading="confidence", interactive = TRUE)
+
+#two tone graph
+t_graph <- plot(ap_18, shading="order", control=list(main ="Two-key plot"))
+
+#matrix <- favorite visual 
+m_trax <- plot(ap_18, method="matrix", control=list(verbose = TRUE))
+
+# display rules with imac in left side
+left_Imac_rules <- subset(ap_18, subset=lhs %in% "iMac")
+
+# display rules with imac in right side
+right_Imac_rules <- subset(ap_18, subset= rhs %in% "iMac")

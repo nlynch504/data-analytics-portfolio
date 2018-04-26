@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1520889529057.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "258493570",
+    "id" : "F4C05507",
+    "lastKnownWriteTime" : 1513132656,
+    "last_content_update" : 1513132656,
+    "path" : "C:/Users/Nickachu/Data Analytics Portfolio/R projects/Market Basket Rules/Report Scripts.R",
+    "project_path" : "Report Scripts.R",
+    "properties" : {
+        "cursorPosition" : "45,0",
+        "scrollLine" : "4"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
