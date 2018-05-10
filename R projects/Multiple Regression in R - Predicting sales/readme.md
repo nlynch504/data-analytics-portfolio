@@ -21,7 +21,9 @@ Sales volume is the dependent variable.
 
 ### Predicted new product sales based on RandomForest model
 **Sales by project category**
+
 ![Project category](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Multiple%20Regression%20in%20R%20-%20Predicting%20sales/Final%20report/Product%20category%20sales.png)
 
 **Sales by product**
+
 ![Project sales](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Multiple%20Regression%20in%20R%20-%20Predicting%20sales/Final%20report/Product%20sales.png)
