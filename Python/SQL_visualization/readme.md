@@ -1,6 +1,6 @@
 # Purpose: to create an interactive visualization of global statistics for population, fertility, and gdp per capita for years 1950 to 2015.
 
-1. [Sql visualization data.py](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/SQL_visualization/sql%20visualization%20 data.py) population and fertility was taken from gap minder website and cleaned prior to sql merge
+1. [Sql visualization data.py](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/SQL_visualization/sql%20visualization%20data.py) population and fertility was taken from gap minder website and cleaned prior to sql merge
 
 2. [gdp cap.py](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/SQL_visualization/gdp%20cap.py) gdp per caputa was taken from gap minder website and cleaned prior to sql merge
 
