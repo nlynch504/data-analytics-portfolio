@@ -12,9 +12,9 @@
 RandomForest with mtry = 10 was the most accurate model.
 
 ### RandomForest Accuracy
-![RandomForest Accuracy](https://github.com/nlynch504/data-analytics-portfolio/master/R%20projects/Brand%20Preference/Final%20Report/RF%20output.jpeg)
+![RandomForest Accuracy](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Brand%20Preference/Final%20Report/RF%20output.jpeg)
 
 ### KNN Accuracy 
-![KNN Accuracy](https://github.com/nlynch504/data-analytics-portfolio/master/R%20projects/Brand%20Preference/Final%20Report/KNN%20output.jpeg)
+![KNN Accuracy](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Brand%20Preference/Final%20Report/KNN%20output.jpeg)
 
 
