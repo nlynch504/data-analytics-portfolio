@@ -51,7 +51,7 @@ K Nearest Neighbor (KNN), RandomForest (RF), and Support Vector Machines Classif
 KNN model with K = 18 was the most accurate model.
 
 ### KNN
-![knn](Python/ML-Marketing/images/knn.png)
+![knn](/images/knn.png)
 ### RandomForest
 ![rf](Python/ML-Marketing/images/rf.png)
 ### SVC
