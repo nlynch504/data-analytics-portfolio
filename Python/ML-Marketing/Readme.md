@@ -4,10 +4,10 @@
 K Nearest Neighbor (KNN), RandomForest (RF), and Support Vector Machines Classifier(SVC), classification models were run on the dataset. The data was spilt into 80/20 training testing sets. StandardScaler(), PCA(n_components=7), and 5 fold cross validation were applied to the data prior to running classification models. KNN with k_neighbors = 18 was the optimal model. It had the highest cross validation score of 88.92% and a predictive accuracy of 86% on the test data. In addition, its accuracy was consistent among training and testing data sets. 
 
 ##  Project structure
-* [bank-full.csv](Python/ML-Marketing/bank-full.csv): dataset
-* [Python scripts and outputs](Python/ML-Marketing/Bank%20marketing-PCA.ipynb): data exploration and predictiive modeling
-* [Marketing  Paper](Python/ML-Marketing/Bank%20Marketing%20project%20paper.docx): summary of data insights
-* [confusion matrix and classification report](Python/ML-Marketing/confusion,%20classification%20reports.xlsx): various metrics from classification prediction models.
+* [bank-full.csv](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/bank-full.csv): dataset
+* [Python scripts and outputs](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/Bank%20marketing-PCA.ipynb): data exploration and predictiive modeling
+* [Marketing  Paper](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/Bank%20Marketing%20project%20paper.docx): summary of data insights
+* [confusion matrix and classification report](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/confusion,%20classification%20reports.xlsx): various metrics from classification prediction models.
 
 ## data dictionary
 
@@ -42,24 +42,24 @@ K Nearest Neighbor (KNN), RandomForest (RF), and Support Vector Machines Classif
 
 
 ## PCA analysis: There were 7 variables that large variances. PCA components were set to 7 prior to training models. 
-![PCA](Python/ML-Marketing/images/PCA.png)
+![PCA](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/PCA.png)
 
 ## model accuracy metrics & visualizations 
 ### Training data tuning accuracy metrics
-![metrics](Python/ML-Marketing/images/training.png)
+![metrics](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/training.png)
 
 KNN model with K = 18 was the most accurate model.
 
 ### KNN
 ![knn](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/knn.png)
 ### RandomForest
-![rf](Python/ML-Marketing/images/rf.png)
+![rf](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/rf.png)
 ### SVC
-![SVC](Python/ML-Marketing/images/svc.png)
+![SVC](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/svc.png)
 
 ### The knn prediction model was applied to testing data set and was ~86% accurate. See metrics below.
 
-![test](Python/ML-Marketing/images/prediction.png)
+![test](https://github.com/nlynch504/data-analytics-portfolio/blob/master/Python/ML-Marketing/images/prediction.png)
 
 
 
