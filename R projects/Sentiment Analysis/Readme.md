@@ -10,6 +10,7 @@ RandomForest with mtry = 24 was the most accurate classifier method for both dat
 ![iphonedotplot](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Sentiment%20Analysis/4.%20R%20Machine%20Learning%20Data%20Analytics/model%20outputs/Iphone_model_summary.png)
 
 **Initial sentiment counts**
+
 ![sentimenthistogram](https://github.com/nlynch504/data-analytics-portfolio/blob/master/R%20projects/Sentiment%20Analysis/4.%20R%20Machine%20Learning%20Data%20Analytics/model%20outputs/Sentiment%20findings.png)
 
 **Insights:**  Both phones had more positive results than negative. The iPhone dataset had stronger sentiments over the entire range and had more positive sentiments. Therefore, it is recommended that Helio develop their medical application for iPhone platform. In addition, Apple’s operating system is similar across their phone models, which makes development for iPhone easier than Galaxy phones. The different Galaxy phones use a wide range of android operating systems versions and this makes application development more complicated.
